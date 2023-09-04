@@ -2,7 +2,7 @@ import { createMaterialBottomTabNavigator } from '@react-navigation/material-bot
 import { NavigationContainer } from '@react-navigation/native';
 
 
-import { Text, StyleSheet, View  } from 'react-native';
+import { StyleSheet  } from 'react-native';
 import IonIcon from '@expo/vector-icons/Ionicons'
 import Ad_Add_page from './adAdd'
 import Chat_page from './chat'
@@ -27,9 +27,10 @@ const SliceApp = ()=> {
          name="Home" 
          component={Home} 
          options={{
+            tabBarColor:"red",
             tabBarLabel: 'خانه',
             tabBarIcon: ({ color }) => (
-              <IonIcon name="home-outline" color={color} size={26} />
+              <IonIcon name="home-outline" color={color} size={25} />
             ),
           }}
          />
@@ -39,9 +40,9 @@ const SliceApp = ()=> {
           component={Ad_Add_page} 
           options={{
             tabBarLabel:"افزودن آگهی",
-            // tabBarBadge: true ,
+            tabBarColor:'blue',
             tabBarIcon: ({color }) => (
-              <IonIcon name="add-circle-outline" color={color} size={26} />
+              <IonIcon name="add-circle-outline" color={color} size={25} />
             ),
           }}
         />
@@ -52,8 +53,9 @@ const SliceApp = ()=> {
           options={{
             tabBarLabel:"پیام ها",
             tabBarBadge: true ,
+            tabBarColor:"yellow",
             tabBarIcon: ({color }) => (
-              <IonIcon name="chatbox-outline" color={color} size={26} />
+              <IonIcon name="chatbox-outline" color={color} size={25} />
             ),
           }}
         />
@@ -67,9 +69,6 @@ const styles= StyleSheet.create({
 
     barStyle:{ 
         backgroundColor: '#fff', 
-        height:50,
-        alignItems:'center',
-        justifyContent:'center'
     }
 })
 

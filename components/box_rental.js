@@ -22,12 +22,12 @@ const SliceApp =({bed,ft,rent,depo,adress,option,img})=>{
     return(
     <View 
       style={{shadowColor:'#000'}}
-      className='w-[180px] h-[180px] shadow-sm bg-white overflow-hidden rounded-[20px]'
+      className='w-[180px] h-[260px] shadow-sm bg-white overflow-hidden rounded-[20px]'
     >
       <ImageBackground
         resizeMode='cover'
         source={img}
-        className='h-[130px] flex justify-between items-center'
+        className='h-[200px] flex justify-between items-center'
       >
       
         <Text

@@ -18,12 +18,8 @@ import {
 const Title = ({title})=>{
   return(
     <View
-      className="py-[5px] px-[15px] flex-row justify-between items-center flex w-full bg-cyan-950/5"
+      className="py-[5px] px-[15px] flex-row justify-end items-center flex w-full bg-cyan-950/5"
     >
-      <Text
-        style={{fontFamily:'IranianSans', shadowColor:'#000'}}
-        className='text-red-950  font-bold text-[10px] '
-      >جدید</Text>
       <Text
         style={{fontFamily:'IranianSans', shadowColor:'#000'}}
         className='text-cyan-950 font-bold text-[20px]'
