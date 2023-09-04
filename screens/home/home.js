@@ -1,7 +1,7 @@
 import IonIcon from '@expo/vector-icons/Ionicons'
-import Home_btn from '../components/home_btn'
-import Box_Rental from '../components/box_rental'
-import {rental} from '../data/data';
+import Home_btn from '../../components/home_btn'
+import Box_Rental from '../../components/box_rental'
+import {rental} from '../../data/data';
 import { useFonts } from 'expo-font';
 
 import { 
@@ -37,7 +37,7 @@ const SliceApp =()=>{
   const Rental = rental;
 
   const [loaded] = useFonts({
-    IranianSans: require('../assets/fonts/IranianSans.ttf'),
+    IranianSans: require('../../assets/fonts/IranianSans.ttf'),
   });
 
     if(!loaded){
@@ -50,7 +50,7 @@ const SliceApp =()=>{
             className='flex-1'
         >
           <ImageBackground
-            source={require("../assets/img/pexels-nick-gorniok-17854713.jpg")}
+            source={require("../../assets/img/pexels-nick-gorniok-17854713.jpg")}
             resizeMode='cover'
             style={{shadowColor:'#000'}}
             className="w-full h-[250px] shadow-lg relative rounded-b-[60px] overflow-hidden"
