@@ -6,9 +6,13 @@ import PostPage from './screens/Post'
 const App= ()=> {
 
   return (
-  //  <Welcome/>
-    <PostPage/>
-  //  <HomeController/>
+    <View
+      className='flex-1 relative'
+    >
+       {/* <Welcome/> */}
+        <PostPage/>
+      {/* <HomeController/> */}
+    </View>
   );
 }
 
